@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Casse Brique</title>
+</head>
+<body>
+
+	<style type="text/css">
+
+	#game{
+		width: 1024px;
+		height: 780px;
+		background-color: rgba(138, 138, 138, 0.37);
+	}
+
+	.defaultBrique{
+		position:absolute;
+		height: 50px;
+		width : 70px;
+		z-index : 1;
+	}
+
+	.defaultBrique img{
+		width : 100%;
+		height: 100%
+	}
+
+	.defaultBarre{
+		position: absolute;
+		width: 200px;
+		height: 50px;
+		
+	}
+
+	.defaultBarre img{
+		width : 100%;
+		height: 100%;
+	}
+
+	.defaultBalle{
+		position:absolute;
+		width: 20px;
+    	height: 20px;
+    	border-radius: 20px;
+		background-color: green;
+	}
+
+	.parametre{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	
+
+	</style>
+	<div class="parametre">
+		<h1 id="nombreVie">Nombre de vie : 3</h1>
+		<h1 id="niveau">Niveau actuel : 1</h1>
+	</div>
+	
+	<!--- JS Template : see https://developer.mozilla.org/en/docs/Web/HTML/Element/template -->
+	<template id="template-brique">
+		<div name="alien" class="defaultBrique">
+			<img id="briqueI" src="brique.svg">
+		</div>
+	</template>
+		
+	<template id="template-barre">
+		<div name="barre" class="defaultBarre" id="barre">
+			<img src="barre.svg">
+		</div>
+	</template>
+
+	<template id="template-balle">
+		<div name="balle" class="defaultBalle">
+		</div>
+	</template>
+	
+	<div id="game">
+
+		
+
+	</div>
+	<script type="text/javascript">	</script>
+	<script src="app.js"></script>
+</body>
+</html>
